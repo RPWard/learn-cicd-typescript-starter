@@ -21,11 +21,5 @@ describe("getAPIKey", () => {
     const key = getAPIKey(testHeader);
     expect(key).toBeNull
   });
-
-  test("broken test", () => {
-    const testHeader = { "apikey": "ApiKey 1234567890" };
-    const key = getAPIKey(testHeader);
-    expect(key).toEqual("!2345");
-  });
 });
 
